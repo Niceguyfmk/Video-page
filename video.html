@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="video.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../coursera/bOGnMCzEEeiTdA5yoE99Fg_6da6f2f02cc411e8b484f7e801bd0278_Bootstrap4-starter/Bootstrap4/conFusion/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../coursera/bOGnMCzEEeiTdA5yoE99Fg_6da6f2f02cc411e8b484f7e801bd0278_Bootstrap4-starter/Bootstrap4/conFusion/node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!--Lightscript stylesheet -->
     <script defer src="./videos.js"></script>
@@ -64,7 +63,7 @@
         <div class="container-fluid">
             <div class = "row">
                 <div class="col-12 col-sm-6 fa fa-play-circle"> 
-                    <video controls >
+                    <!-- <video controls >
                         <source src="vid/AUE car show .mp4" type="video/mp4">
                         Your browser doesn't suporrt mp4 videos, please change your browser!
                     </video>
@@ -76,18 +75,31 @@
                     <video controls >
                         <source src="vid/AUE car show .mp4" type="video/mp4">
                         Your browser doesn't suporrt mp4 videos, please change your browser!
-                    </video>
+                    </video> -->
+                    <button id="myBtn">Open Modal</button> 
+                    <!-- ^^ this should be the picture of the thumbnail you want -->
+                    <div id="myModal" class="modal">
 
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                            <video controls >
+                                <source src="vid/AUE car show .mp4" type="video/mp4">
+                                Your browser doesn't suporrt mp4 videos, please change your browser!
+                            </video>
+                        </div>
+                      
+                      </div>
                 </div>    
                 <div class="col-12 col-sm-6"> 
-                    <video controls >
+                    <!-- <video controls >
                         <source src="vid/AUE car show .mp4" type="video/mp4">
                         Your browser doesn't suporrt mp4 videos, please change your browser!
                     </video>
                     <video controls >
                         <source src="vid/AUE car show .mp4" type="video/mp4">
                         Your browser doesn't suporrt mp4 videos, please change your browser!
-                    </video>
+                    </video> -->
 
                 </div>
             </div>    
