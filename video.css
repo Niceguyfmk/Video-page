@@ -16,7 +16,6 @@ section .top{
    height: 200px;
  }
 
-
 .navbar{
     background-color :rgba(0, 0, 0, 0.822);
     width: 100%; /* Full width */
@@ -63,8 +62,9 @@ nav menu ul li a{
  }
 
  header h1{
-    padding-top: 30px;
-    text-align: center;}
+    padding-top: 60px;
+    text-align: center;
+  }
  
 .row {
     display: flex;
@@ -76,8 +76,11 @@ nav menu ul li a{
   margin-bottom: 0;
   background-color: white;
 }
-/*home*/
 
+/*home*/
+.home{
+  padding-bottom: 20px;
+}
 .home .col-12 {
     padding-left: 10px;
     padding-right: 0;
@@ -86,38 +89,55 @@ nav menu ul li a{
     padding-right: 0%;
     padding-left: 0%;
 }
+.home img {
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+  max-width:100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
 video{
     width: 100%;
     cursor: pointer;
 }
  
-#lightbox {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .8);
-    display: none;
+/* Modal Body */
+.modal-body {padding: 2px;}
+
+
+/* Modal Content */
+.modal-content {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 0px;
+  width: 100%;
+  position: relative;
+  background-color: black;
+  border: 1px solid white;
+  z-index: 1000;
+  margin: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
-#lightbox.active{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
 }
 
-/*border styling*/
-#lightbox video {
-    /*max settings so it can't expand bigger
-     than our screen size*/
-    max-width: 90%;
-    max-height: 80%;
-    padding: 8px;
-    background-color: black;
-    border: 1px solid white;
-  }
-   
   /*Footer*/
 
 .footer{
@@ -241,24 +261,4 @@ footer .left-side{
   }
 }
 
-/* Modal Body */
-.modal-body {padding: 2px 16px;}
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-/* Add Animation */
-@keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
-}
